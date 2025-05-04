@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fffaf0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #ffffff;
+}
+
+.logo{
+  justify-content: start;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.nav_links{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.nav_items{
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+
+.contact-button {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('../images/agroton_bk.png') center center/cover no-repeat;
+  border-radius: 15px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 250px;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
