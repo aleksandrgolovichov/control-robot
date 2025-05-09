@@ -3,31 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agroton</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/_reset.css">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/Agroton_logo.png">
+  <title>Agroton</title>
 </head>
 <body>
+
   <header class="navbar">
+    <div class="burger" id="burger">&#9776;</div>
     <div class="logo">
       <img src="images/Agroton_logo.png" alt="Agroton Logo" />
       <span>AGROTON</span>
     </div>
 
-   
-
-    <nav class="nav_links">
-      <a class="nav_items" href="#">ABOUT COMPANY</a>
-      <a class="nav_items" href="#">PRODUCTS</a>
-      <a class="nav_items" href="#">PARTNERS</a>
-      <a class="nav_items" href="#">BLOG</a>
-      <a class="nav_items" href="#">CONTACT</a>
+    <nav class="nav-links" id="navMenu">
+      <a href="#">ABOUT COMPANY</a>
+      <a href="#">PRODUCTS</a>
+      <a href="#">PARTNERS</a>
+      <a href="#">BLOG</a>
+      <a href="#">CONTACT</a>
     </nav>
-
     <a class="contact-button" href="#">CONTACT US</a>
-
   </header>
 
   <section class="hero">
@@ -36,5 +33,15 @@
       <p>ONE OF THE LARGEST PRODUCERS OF AGRICULTURAL PRODUCTS IN UKRAINE</p>
     </div>
   </section>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('navMenu');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>
